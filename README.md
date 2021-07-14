@@ -1,0 +1,1 @@
+# Django_BlogProject_basic
