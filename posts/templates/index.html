@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Writers</title>
+  </head>
+  <body>
+    <h1>The Writers who wrote blogs</h1>
+    {% if bloggers%}
+        <ul class="list-group">
+          {% for bl in bloggers%}
+          <li class="list-group-item"><a href="{% url 'posts:Blogs' bl.id%}">{{bl.Name}}</li>
+          {% endfor %}
+          </ul>
+        {%else%}
+        <p> No One has joined our blogg.</p>
+        {% endif %}
+  </body>
+</html>
